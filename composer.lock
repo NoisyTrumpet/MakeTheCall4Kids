@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f31f679ab253b90c13366000decce59b",
+    "content-hash": "dc779aecc3d52baa1f7f2e178429f6ae",
     "packages": [
         {
             "name": "brain/hierarchy",
@@ -1186,6 +1186,52 @@
             "description": "Symfony Translation Component",
             "homepage": "https://symfony.com",
             "time": "2019-01-27T23:11:39+00:00"
+        },
+        {
+            "name": "webstractions/sage-xpress",
+            "version": "v0.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/webstractions/sage-xpress.git",
+                "reference": "0634b97c124435da15214a5939e7ed5c0e50ac29"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/webstractions/sage-xpress/zipball/0634b97c124435da15214a5939e7ed5c0e50ac29",
+                "reference": "0634b97c124435da15214a5939e7ed5c0e50ac29",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7"
+            },
+            "suggest": {
+                "filp/whoops": "^2.1"
+            },
+            "type": "package",
+            "autoload": {
+                "psr-4": {
+                    "SageXpress\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ron Pugmire",
+                    "role": "Developer",
+                    "homepage": "https://github.com/webstractions"
+                }
+            ],
+            "description": "Extends Sage ~9-beta with Blade directives, component providers, streamlined configurations, and more. ",
+            "homepage": "https://github.com/webstractions/sage-xpress",
+            "keywords": [
+                "roots",
+                "sage",
+                "webstractions"
+            ],
+            "time": "2017-11-09T16:10:17+00:00"
         }
     ],
     "packages-dev": [

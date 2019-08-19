@@ -12,7 +12,6 @@ use Roots\Sage\Template\BladeProvider;
  */
 add_action('wp_enqueue_scripts', function () {
 	wp_enqueue_style('sage/main.css', asset_path('styles/main.css'), false, null);
-	wp_enqueue_script('respbgimages', asset_path('scripts/respbgimages.js'), [], null, true);
 	wp_enqueue_script('sage/main.js', asset_path('scripts/main.js'), ['jquery'], null, true);
 
 	if (is_single() && comments_open() && get_option('thread_comments')) {
@@ -29,7 +28,7 @@ add_action('after_setup_theme', function () {
 	 * @link https://roots.io/plugins/soil/
 	 */
 	add_theme_support('soil-clean-up');
-	add_theme_support('soil-jquery-cdn');
+	// add_theme_support('soil-jquery-cdn');
 	add_theme_support('soil-nav-walker');
 	add_theme_support('soil-nice-search');
 	add_theme_support('soil-relative-urls');

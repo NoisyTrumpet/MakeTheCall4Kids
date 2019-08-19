@@ -1,5 +1,5 @@
 {{--
-  Template Name: Custom Template
+  Template Name: Home Template
 --}}
 
 @extends('layouts.app')

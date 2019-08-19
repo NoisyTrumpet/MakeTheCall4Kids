@@ -1,0 +1,61 @@
+/* Text Color Styles */
+.textGreen {
+  color: $Mt4K-green;
+}
+
+.textLightBlue {
+  color: $Mt4K-lightBlue;
+}
+
+.textPurple {
+  color: $Mt4K-purple;
+}
+
+.textMaroon {
+  color: $Mt4K-maroon;
+}
+
+.textOrange {
+  color: $Mt4K-orange;
+}
+
+.textRed {
+  color: $Mt4K-red;
+}
+
+/* Font Styles */
+.quickSand {
+  font-family: "Quicksand", sans-serif;
+}
+
+.light {
+  font-weight: 300;
+}
+
+.regular {
+  font-weight: 400;
+}
+
+.medium {
+  font-weight: 500;
+}
+
+.semiBold {
+  font-weight: 600;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+body {
+  background: url("../images/bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.gradContainer {
+  background: $lightBlueGradient;
+  border-radius: 25px;
+  padding: 2rem 1rem;
+}

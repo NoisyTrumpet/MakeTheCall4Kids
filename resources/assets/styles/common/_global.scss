@@ -24,7 +24,7 @@
 }
 
 .textBlack {
-  color: #333;
+  color: #333 !important;
 }
 
 /* Font Styles */
@@ -52,6 +52,110 @@
   font-weight: 700;
 }
 
+/* Button Styles */
+.button {
+  padding: 1rem 3rem;
+  margin: 1rem;
+  display: inline-block;
+  border-radius: 44px;
+  transition: all 0.3s ease 0s;
+  // Link Styles
+  a {
+    color: white;
+  }
+  // Hover Styles
+  a:hover {
+    color: white !important;
+    text-decoration: none !important;
+  }
+}
+
+.buttonPurple {
+  background-color: $Mt4K-purple;
+  color: white;
+  box-shadow: 0 8px 15px rgba(91, 91, 150, 0.1);
+  // Hover Styles
+  &:hover {
+    box-shadow: 0 15px 20px rgba(91, 91, 150, 0.4);
+    transform: translateY(-7px);
+    // Link Color
+    a:hover {
+      color: white !important;
+      text-decoration: none !important;
+    }
+  }
+}
+
+.buttonLightBlue {
+  background-color: $Mt4K-lightBlue;
+  color: white;
+  box-shadow: 0 8px 15px rgba(25, 188, 195, 0.1);
+  // Hover Styles
+  &:hover {
+    box-shadow: 0 15px 20px rgba(25, 188, 195, 0.4);
+    transform: translateY(-7px);
+    // Link Color
+    a:hover {
+      color: white !important;
+      text-decoration: none !important;
+    }
+  }
+}
+
+.buttonRed {
+  background-color: $Mt4K-red;
+  color: white;
+  box-shadow: 0 8px 15px rgba(190, 37, 52, 0.1);
+  // Hover Styles
+  &:hover {
+    box-shadow: 0 15px 20px rgba(190, 37, 52, 0.4);
+    transform: translateY(-7px);
+    // Link Color
+    a:hover {
+      color: white !important;
+      text-decoration: none !important;
+    }
+  }
+}
+
+// Details Page
+
+.stepSection {
+  margin: 2rem auto;
+  // Step Text
+  p {
+    padding: 0.5rem;
+    margin: 0.5rem 0.5rem;
+  }
+  // Image Styles
+  img {
+    display: block;
+    margin: 0 auto;
+    max-width: 50%;
+  }
+}
+
+.circle {
+  border: 0.3em solid $Mt4K-purple;
+  border-radius: 100%;
+  height: 3em;
+  width: 3em;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  // Number Style
+  h4 {
+    margin-top: 15.25%;
+  }
+}
+
+// Helpers
+.centerMe {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 body {
   background: url("../images/bg.png");
   background-size: cover;
@@ -62,4 +166,5 @@ body {
   background: $lightBlueGradient;
   border-radius: 25px;
   padding: 2rem 1rem;
+  margin: 0 auto;
 }

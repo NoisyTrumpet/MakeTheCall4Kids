@@ -39,7 +39,9 @@
     "soberwp/controller": "~2.1.0",
     "webstractions/sage-xpress": "^0.2.1",
     "roots/sage-woocommerce": "^1.0",
-    "mwdelaney/sage-bootstrap4-navwalker": "^1.3"
+    "mwdelaney/sage-bootstrap4-navwalker": "^1.3",
+    "log1x/sage-directives": "^1.1",
+    "josh-taylor/sage-svg": "^0.2.0"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^2.8.0",

@@ -35,13 +35,11 @@ class App extends Controller {
 	public function primarymenu() {
 		$args = array(
 			'theme_location' => 'primary_navigation',
-			'menu_class' => 'navbar-nav',
 			'depth' => 2,
 			'container' => 'div',
-			'container_class' => 'collapse navbar-collapse',
+			'container_class' => 'collapse navbar-collapse justify-content-start',
 			'container_id' => 'bs-example-navabar-collapse-1',
-			'menu_class' => 'nav navbar-collapse quickSand',
-			'list_class' => 'quickSand',
+			'menu_class' => 'nav navbar-collapse quickSand bold textBlack',
 			'walker' => new \App\wp_bootstrap4_navwalker(),
 
 		);

@@ -39,7 +39,7 @@ class App extends Controller {
 			'container' => 'div',
 			'container_class' => 'collapse navbar-collapse justify-content-start',
 			'container_id' => 'bs-example-navabar-collapse-1',
-			'menu_class' => 'nav navbar-collapse quickSand bold textBlack',
+			'menu_class' => 'nav navbar-collapse quickSand semiBold textBlack',
 			'walker' => new \App\wp_bootstrap4_navwalker(),
 
 		);

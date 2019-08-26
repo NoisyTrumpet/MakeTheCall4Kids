@@ -8,13 +8,13 @@
 			<h2 class="quickSand medium textPurple">Select Your Geographic Region</h2>
 			<div class="row">
 				<div class="col-xs-12 col-sm-12 col-md-4">
-					<a class="button buttonLightBlue">San Antonio</a>
+					<a class="button buttonLightBlue" id="SA" href="san-antonio">San Antonio</a>
 				</div>
 				<div class="col-xs-12 col-sm-12 col-md-4">
-					<a class="button buttonLightBlue">Austin</a>
+					<a class="button buttonLightBlue" id="AUS" href="austin">Austin</a>
 				</div>
 				<div class="col-xs-12 col-sm-12 col-md-4">
-					<a class="button buttonLightBlue">Corpus Christi</a>
+					<a class="button buttonLightBlue" id="CC" href="corpus-christi">Corpus Christi</a>
 				</div>
 			</div>
 		</div>

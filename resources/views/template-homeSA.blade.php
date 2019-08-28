@@ -5,6 +5,6 @@ Template Name: San Antonio Home Template
 
 @section('content')
     @include('partials.page-header')
-    @include('partials.homeOverlay')
+    @include('partials/SA/hero')
 
 @endsection

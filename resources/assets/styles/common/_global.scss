@@ -188,6 +188,27 @@
   }
 }
 
+// San Antonio Home Styles
+#SA-Hero-Wrapper {
+  h1 {
+    text-align: center;
+    font-size: 3.2rem !important;
+  }
+  // TJH Image
+  img.tjh {
+    display: block;
+    margin: 0 auto;
+    max-width: 200px;
+  }
+  // Main Phone Image
+  img.mainPhone {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    width: 400px;
+  }
+}
+
 .darkBG {
   position: absolute;
   width: 100%;

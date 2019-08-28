@@ -13,7 +13,87 @@ $Mt4K-lightBlue: #19bcc3; // rgb(25, 188, 195)
 $Mt4K-purple: #5b5b96; // rgb(91, 91, 150)
 $Mt4K-maroon: #b42d4a; // rgb(180, 45, 74)
 $Mt4K-orange: #f0673a; // rgb(240, 103, 58)
-$Mt4K-red: #be2534;// rgb(190, 37, 52)
+$Mt4K-red: #be2534; // rgb(190, 37, 52)
 
 /** Gradient **/
 $lightBlueGradient: rgba(238, 248, 251, 0.83);
+
+/** Viewport Breakpoints **/
+// Small tablets and large smartphones (landscape view)
+$screen-sm-min: 576px;
+// Small tablets (portrait view)
+$screen-md-min: 768px;
+// Tablets and small desktops
+$screen-lg-min: 992px;
+// Large tablets and desktops
+$screen-xl-min: 1200px;
+
+// Small devices
+@mixin min-sm {
+  @media (min-width: #{$screen-sm-min}) {
+    @content;
+  }
+}
+
+// Medium devices
+@mixin min-md {
+  @media (min-width: #{$screen-md-min}) {
+    @content;
+  }
+}
+
+// Large devices
+@mixin min-lg {
+  @media (min-width: #{$screen-lg-min}) {
+    @content;
+  }
+}
+
+// Extra large devices
+@mixin min-xl {
+  @media (min-width: #{$screen-xl-min}) {
+    @content;
+  }
+}
+
+// Custom devices
+@mixin max-rwd($screen) {
+  @media (max-width: $screen+"px") {
+    @content;
+  }
+}
+
+// Small devices
+@mixin max-sm {
+  @media (max-width: #{$screen-sm-min}) {
+    @content;
+  }
+}
+
+// Medium devices
+@mixin max-md {
+  @media (max-width: #{$screen-md-min}) {
+    @content;
+  }
+}
+
+// Large devices
+@mixin max-lg {
+  @media (max-width: #{$screen-lg-min}) {
+    @content;
+  }
+}
+
+// Extra large devices
+@mixin max-xl {
+  @media (max-width: #{$screen-xl-min}) {
+    @content;
+  }
+}
+
+// Custom devices
+@mixin max-rwd($screen) {
+  @media (max-width: $screen+"px") {
+    @content;
+  }
+}

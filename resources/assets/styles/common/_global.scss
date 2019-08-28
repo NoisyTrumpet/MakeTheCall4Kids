@@ -192,7 +192,19 @@
 #SA-Hero-Wrapper {
   h1 {
     text-align: center;
-    font-size: 3.2rem !important;
+    font-size: 3.2rem;
+    // Tablet
+    @include max-md {
+      font-size: 2.5rem;
+    }
+    // Mobile
+    @include max-sm {
+      font-size: 2rem;
+    }
+  }
+  // p fix
+  p {
+    margin-bottom: 0.5rem !important;
   }
   // TJH Image
   img.tjh {
@@ -206,6 +218,35 @@
     margin: 0 auto;
     max-width: 100%;
     width: 400px;
+  }
+  // Main Container Styles:
+  .container {
+    // Medium & Small
+    @include max-rwd(1395) {
+      background: $lightBlueGradient;
+      border-radius: 25px;
+      padding: 2rem 1rem;
+    }
+  }
+  // News 4 Image
+  img.news4 {
+    max-width: 75px;
+  }
+  // Brighton Image
+  img.brighton {
+    max-width: 100%;
+    width: 300px;
+  }
+}
+// Phones Grid
+#phonesGrid {
+  margin: 2rem auto;
+  // Phone Image Styles
+  img.phoneThumb {
+    display: block;
+    margin: 0 auto;
+    width: 300px;
+    max-width: 100%;
   }
 }
 

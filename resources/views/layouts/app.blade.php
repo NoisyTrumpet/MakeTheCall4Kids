@@ -16,6 +16,11 @@
         @endif
       </div>
     </div>
+
+    @if(!isset($_SESSION['selectedMarket']))
+    @include('partials.homeOverlay')
+    @endif
+
     @php do_action('get_footer') @endphp
     @include('partials.footer')
     @php wp_footer() @endphp

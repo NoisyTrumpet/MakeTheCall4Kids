@@ -135,3 +135,8 @@ add_action('after_setup_theme', function () {
 		return "<?= " . __NAMESPACE__ . "\\asset_path({$asset}); ?>";
 	});
 });
+
+add_action('wp_enqueue_scripts', function () {
+    wp_enqueue_script( 'ajax-script', asset_path('scripts/ajax.js'), array('jquery') );
+	wp_localize_script( 'ajax-script', 'my_ajax_object', array( 'ajax_url' => admin_url( 'admin-ajax.php' ) ) );
+}, 100);

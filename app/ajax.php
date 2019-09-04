@@ -17,9 +17,12 @@ class Ajax
         if(isset($selected_market)) {
             $_SESSION['selectedMarket'] = $selected_market;
         }
-        
-        echo Template('partials.logos');
-        
+
+        $partials = array(
+            'logo' => Template('partials.logos')
+        );
+        echo json_encode($partials);
+
         wp_die();
     }
 }
